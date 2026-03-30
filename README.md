@@ -21,7 +21,7 @@ Petly is a modern, transparent desktop pet built with Electron and React. It hel
 ## 🚀 Installation
 
 ### For Users
-1. Download the latest `Petly Setup 1.0.0.exe` from the [Releases](https://github.com/YOUR_USERNAME/Petly/releases) page.
+1. Download the latest `Petly Setup 1.0.0.exe` from the [Releases](https://github.com/marlon14421/Petly/releases) page.
 2. Run the installer. It will automatically install and launch Petly.
 3. Access settings and pet selection through the system tray icon (bottom right of your taskbar).
 
