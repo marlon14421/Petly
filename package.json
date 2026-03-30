@@ -1,0 +1,69 @@
+{
+  "name": "petly",
+  "version": "1.0.0",
+  "description": "Your virtual desktop pet for task management and reminders.",
+  "main": "dist-electron/main/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "package": "npm run build && electron-builder"
+  },
+  "build": {
+    "appId": "com.petly.app",
+    "productName": "Petly",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist",
+      "dist-electron",
+      "logo-removebg-preview.png"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "logo-removebg-preview.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Petly",
+      "artifactName": "Petly_Setup_${version}.${ext}"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.4.27",
+    "electron": "^41.1.0",
+    "electron-builder": "^26.8.1",
+    "esbuild": "^0.27.4",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.3",
+    "vite-plugin-electron": "^0.29.1",
+    "vite-plugin-electron-renderer": "^0.14.6"
+  },
+  "dependencies": {
+    "lucide-react": "^1.7.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}

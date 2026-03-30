@@ -1,0 +1,74 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build outputs
+dist/
+dist-electron/
+release/
+build/
+out/
+.vite/
+
+# OS metadata
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env.local
+
+# Vite
+*.local
+
+# Build outputs (Archive)
+*.exe
+*.zip
+*.7z
+*.tar.gz
+*.asar
+
+# Electron-builder & NSIS cache
+winCodeSign/
+nsis/
+electron-builder/
+.electron-builder/
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.bak
+~*
