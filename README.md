@@ -44,11 +44,6 @@ If you want to run or build the project yourself:
    npm run dev
    ```
 
-4. **Build the installer:**
-   ```bash
-   npm run package
-   ```
-
 ## 🛠️ Built With
 
 - **Electron** - Desktop framework
